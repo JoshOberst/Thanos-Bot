@@ -11,7 +11,6 @@ client.on('message', (msg) => {
         })
         .then(function(data){
             msg.channel.send(data.quote);
-            console.log(data.quote);
         });
 	}
 });
