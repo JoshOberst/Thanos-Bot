@@ -12,8 +12,19 @@ client.on('message', (msg) => {
         .then(function(data){
             msg.channel.send(data.quote);
         });
-	}
+    }
+    if(msg.content.charAt[0] === '!'){
+        fetch('https://thanosapi.herokuapp.com/random/')
+        .then(function(res){
+            return res.json();
+        })
+        .then(function(data){
+            msg.channel.send(data.quote);
+        });
+    }
 });
+
+
 
 client.on('ready', () => {
 	console.log('Bot is now online!');
