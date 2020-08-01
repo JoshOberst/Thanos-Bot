@@ -15,8 +15,6 @@ client.on('message', (msg) => {
     }
 });
 
-
-
 client.on('ready', () => {
 	console.log('Bot is now online!');
 });
