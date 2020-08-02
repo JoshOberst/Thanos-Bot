@@ -5,24 +5,22 @@ const fetch = require("node-fetch");
 client.on('message', (msg) => {
     var num = Math.floor(Math.random() * 100);
     if (num <= 9) {
-		fetch('https://thanosapi.herokuapp.com/random/')
-        .then(function(res){
-            return res.json();
-        })
-        .then(function(data){
-            msg.channel.send(data.quote);
-        });
+		request();
     }
-    if(msg.content.charAt[0] === '!'){
-        fetch('https://thanosapi.herokuapp.com/random/')
-        .then(function(res){
-            return res.json();
-        })
-        .then(function(data){
-            msg.channel.send(data.quote);
-        });
+    else if(msg.content.charAt(0) === '!'){
+        console.log("User request");
+        request();
     }
 });
+ function request(){
+    fetch('https://thanosapi.herokuapp.com/random/')
+        .then(function(res){
+            return res.json();
+        })
+        .then(function(data){
+            msg.channel.send(data.quote);
+        });
+ };
 
 
 
