@@ -7,4 +7,4 @@ Whats been done:
  
 Whats left to be done:
  * Create a way for the bot to play audio files in populated voice channels
- * Create either a directory of audio snippets to be played
+ * Create either a directory of audio snippets to be played or find a directory to use
