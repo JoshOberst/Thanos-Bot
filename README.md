@@ -1,4 +1,10 @@
-# Thanos-Bot
- A discord bot to quote Thanos
+# Thanos-Bot 
+##### Voice Branch
 
-Currently the bot has a 10% chance to respond to a message on a discord server with a thanos quote. Currently it is just messages. 
+Whats been done:
+ * Added ! command to send message containing a thanos quote 100% of the time
+ * Created a multi-purpose function for getting a quote from the Thanos API
+ 
+Whats left to be done:
+ * Create a way for the bot to play audio files in populated voice channels
+ * Create either a directory of audio snippets to be played
