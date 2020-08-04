@@ -4,12 +4,13 @@ const fetch = require("node-fetch");
 
 client.on('message', (msg) => {
     var num = Math.floor(Math.random() * 100);
-    if (num <= 9) {
-		request();
-    }
-    else if(msg.content.charAt(0) === '!'){
-        console.log("User request");
+    
+    if(msg.isMemberMentioned(client.user) == true){
+        console.log("yesssir!");
         request();
+    }
+    else if (num <= 9) {
+		request();
     }
 });
  function request(){
